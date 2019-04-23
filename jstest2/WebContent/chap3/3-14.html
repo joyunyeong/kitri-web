@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+	var empty_object = {};
+	var member = {
+		"user-name" : "홍길동",
+		"age" : 20,
+		"city" : "서울"
+	};
+
+	console.log(member.age);
+	console.log(member["age"]);
+	console.log(member["user-name"]);
+	console.log(member.user - name);
+
+	// 속성값 변경
+	member.age = 30;
+	member["city"] = "경기도";
+	member.tel = "010-1234-5678";
+
+	console.log(member["age"]);
+	console.log(member.city);
+	console.log(member.tel);
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>
