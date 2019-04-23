@@ -4,13 +4,25 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <script type="text/javascript">
-	var view = document.getElementById("view");
-	view.innerHTML = '<font color = "magenta" size = "15"> 문자열 추가해요 </font>'
+	
+	window.onload = function() { // 원인 : 먼저 로딩이 되니 문제가 되었다, 해결책 : 밑에가 다 읽혀지면 실행되라 > 그래서 window.onload를 사용한 것
+		var view = document.getElementById("view");
+		var view2 = document.getElementById("view2");
+		view.innerHTML = '<font color = "magenta" size = "15"> 문자열 추가해요 </font>'
+
+		// 태그도 바꿀 수 있지만 속성도 바꿀 수 O
+		view2.style.color = "steelblue";
+		view2.style.backgroundColor = "orange";
+		document.getElementById("img").setAttribute("src","/js/img/logo.png");
+	}
+	
 </script>
 </head>
 <body>
 	<div align = "center">
 		<div id = "view"></div>
+		<div id = "view"> 안녕하세요 </div>
+		<img id = "img">
 	</div>
 </body>
 </html>
