@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<div onclick = "javascript: alert('안녕하세요');"> 클릭하세요 1</div>
+	
+	<div id = "div1"> 클릭하세요 2 </div>
+	<script type="text/javascript">
+	document.getElementById("div1").onclick = function() {
+		alert('안녕하신감');
+	};
+	
+	</script>
+	
+	<div id = "div2"> 클릭하세요 3 </div>
+	<script type="text/javascript">
+	document.getElementById("div2").addEventListener("click", openAlert, false);
+	
+	function openAlert() {
+		alert("안녕하슈");
+	}
+		
+	</script>
+
+</body>
+</html>
