@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE booklist SYSTEM "book.dtd">
+
+<booklist>
+	<book kind = "IT" isbn ="b1">
+		<title></title>
+		<author>
+			<name sex = "남"> 홍길동 </name>
+			<tel>010-1234-5678</tel>
+			<address>서울시</address>
+		</author>
+		<publisher>키트리 출판사</publisher>
+		<price>30000</price>
+		<description>굿굿</description>
+	</book>
+</booklist>
